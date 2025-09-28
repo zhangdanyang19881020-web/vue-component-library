@@ -1,5 +1,12 @@
-import { createApp } from 'vue'
-import './style.css'
+import {
+	createApp
+} from 'vue'
+import './styles/style.css'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import ElementPlus from 'element-plus';
+import 'element-plus/dist/index.css'; // 引入 Element Plus 的样式
+
+createApp(App)
+	.use(ElementPlus)
+	.mount('#app')
